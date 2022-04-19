@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		6A73BE25280349480038ADED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE23280349480038ADED /* Main.storyboard */; };
 		6A73BE272803494A0038ADED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE262803494A0038ADED /* Assets.xcassets */; };
 		6A73BE2A2803494A0038ADED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE282803494A0038ADED /* LaunchScreen.storyboard */; };
+		72B1BB97280F55FB005AA2AB /* GCListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */; };
+		72B1BB99280F5926005AA2AB /* GCListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6A73BE262803494A0038ADED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A73BE292803494A0038ADED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A73BE2B2803494A0038ADED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GCListCollectionViewController.swift; path = ../../../GCListCollectionViewController.swift; sourceTree = "<group>"; };
+		72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GCListCollectionViewCell.swift; path = ../../../GCListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				6A73BE262803494A0038ADED /* Assets.xcassets */,
 				6A73BE282803494A0038ADED /* LaunchScreen.storyboard */,
 				6A73BE2B2803494A0038ADED /* Info.plist */,
+				72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */,
+				72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */,
 			);
 			path = "U-Travel";
 			sourceTree = "<group>";
@@ -93,7 +99,6 @@
 		6A73BE12280349480038ADED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -103,7 +108,7 @@
 				};
 			};
 			buildConfigurationList = 6A73BE15280349480038ADED /* Build configuration list for PBXProject "U-Travel" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B1BB97280F55FB005AA2AB /* GCListCollectionViewController.swift in Sources */,
 				6A73BE22280349480038ADED /* ViewController.swift in Sources */,
 				6A73BE1E280349480038ADED /* AppDelegate.swift in Sources */,
 				6A73BE20280349480038ADED /* SceneDelegate.swift in Sources */,
+				72B1BB99280F5926005AA2AB /* GCListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HGRW8LJPL6;
+				DEVELOPMENT_TEAM = MKFJX26W5Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "U-Travel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,12 +304,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.U-Travel";
+				PRODUCT_BUNDLE_IDENTIFIER = "U-Travel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HGRW8LJPL6;
+				DEVELOPMENT_TEAM = MKFJX26W5Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "U-Travel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,12 +333,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.U-Travel";
+				PRODUCT_BUNDLE_IDENTIFIER = "U-Travel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
