@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bookings" representedClassName="Bookings" syncable="YES">
+        <attribute name="bookingid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="datebooked" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="itemid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="bookeditem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="bookingsuser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User"/>
+    </entity>
+    <entity name="Friends" representedClassName="Friends" syncable="YES">
+        <attribute name="friendid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="friendship_anniv" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="friendsuser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="catergory" attributeType="String"/>
+        <attribute name="company" attributeType="String"/>
+        <attribute name="cost" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="info" attributeType="String"/>
+        <attribute name="itemid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="picture" attributeType="URI"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
+        <attribute name="tag2" optional="YES" attributeType="String"/>
+        <attribute name="tag3" optional="YES" attributeType="String"/>
+        <attribute name="tag4" optional="YES" attributeType="String"/>
+        <relationship name="itembooked" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bookings"/>
+        <relationship name="itemliked" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Likes"/>
+    </entity>
+    <entity name="Likes" representedClassName="Likes" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="itemid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="likeditem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item"/>
+        <relationship name="likesuser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User"/>
+    </entity>
+    <entity name="Preferences" representedClassName="Preferences" syncable="YES">
+        <attribute name="budget" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="datesubmitted" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fav_activity" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="fav_activity2" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="fav_activity3" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="fav_activity4" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="fav_activity5" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="favorite_dest" optional="YES" attributeType="String" spotlightIndexingEnabled="YES"/>
+        <attribute name="travel_endday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="travel_startday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="user_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weather" optional="YES" attributeType="Decimal" defaultValueString="0.0" spotlightIndexingEnabled="YES"/>
+        <relationship name="preferencesusers" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="dateofbirth" optional="YES" attributeType="Date" minDateTimeInterval="-653206380" usesScalarValueType="NO"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="fname" attributeType="String" defaultValueString="Roc" spotlightIndexingEnabled="YES"/>
+        <attribute name="lname" attributeType="String" defaultValueString="User" spotlightIndexingEnabled="YES"/>
+        <attribute name="paymentmethod" optional="YES" attributeType="String"/>
+        <attribute name="phonenum" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="picture" optional="YES" attributeType="URI"/>
+        <attribute name="user_id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" spotlightIndexingEnabled="YES"/>
+        <relationship name="userbookings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bookings"/>
+        <relationship name="userfriends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Friends"/>
+        <relationship name="userLikes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Likes"/>
+        <relationship name="userpreferences" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Preferences"/>
+    </entity>
+    <elements>
+        <element name="Bookings" positionX="-869.85546875" positionY="-357.09375" width="128" height="119"/>
+        <element name="Friends" positionX="-1122.38671875" positionY="-163.08203125" width="128" height="89"/>
+        <element name="Item" positionX="-642.0703125" positionY="-93.734375" width="128" height="209"/>
+        <element name="Likes" positionX="-713.27734375" positionY="285.1796875" width="128" height="104"/>
+        <element name="Preferences" positionX="-1063.36328125" positionY="208.5703125" width="128" height="224"/>
+        <element name="User" positionX="-933.65625" positionY="-94.26953125" width="128" height="209"/>
+    </elements>
+</model>
