@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FE619E42814E8F1009FAB07 /* RecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE619E32814E8F1009FAB07 /* RecCell.swift */; };
+		4FE619E62814E9CF009FAB07 /* RecTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE619E52814E9CF009FAB07 /* RecTVC.swift */; };
 		6A73BE1E280349480038ADED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73BE1D280349480038ADED /* AppDelegate.swift */; };
 		6A73BE20280349480038ADED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73BE1F280349480038ADED /* SceneDelegate.swift */; };
 		6A73BE22280349480038ADED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73BE21280349480038ADED /* ViewController.swift */; };
 		6A73BE25280349480038ADED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE23280349480038ADED /* Main.storyboard */; };
 		6A73BE272803494A0038ADED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE262803494A0038ADED /* Assets.xcassets */; };
 		6A73BE2A2803494A0038ADED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE282803494A0038ADED /* LaunchScreen.storyboard */; };
-		72B1BB97280F55FB005AA2AB /* GCListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */; };
-		72B1BB99280F5926005AA2AB /* GCListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FE619E32814E8F1009FAB07 /* RecCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecCell.swift; sourceTree = "<group>"; };
+		4FE619E52814E9CF009FAB07 /* RecTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecTVC.swift; sourceTree = "<group>"; };
 		6A73BE1A280349480038ADED /* U-Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "U-Travel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A73BE1D280349480038ADED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A73BE1F280349480038ADED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		6A73BE262803494A0038ADED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A73BE292803494A0038ADED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A73BE2B2803494A0038ADED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GCListCollectionViewController.swift; path = ../../../GCListCollectionViewController.swift; sourceTree = "<group>"; };
-		72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GCListCollectionViewCell.swift; path = ../../../GCListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FE619E02814E59A009FAB07 /* RecommendationList */ = {
+			isa = PBXGroup;
+			children = (
+				4FE619E32814E8F1009FAB07 /* RecCell.swift */,
+				4FE619E52814E9CF009FAB07 /* RecTVC.swift */,
+			);
+			path = RecommendationList;
+			sourceTree = "<group>";
+		};
 		6A73BE11280349480038ADED = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +69,7 @@
 		6A73BE1C280349480038ADED /* U-Travel */ = {
 			isa = PBXGroup;
 			children = (
+				4FE619E02814E59A009FAB07 /* RecommendationList */,
 				6A73BE1D280349480038ADED /* AppDelegate.swift */,
 				6A73BE1F280349480038ADED /* SceneDelegate.swift */,
 				6A73BE21280349480038ADED /* ViewController.swift */,
@@ -67,8 +77,6 @@
 				6A73BE262803494A0038ADED /* Assets.xcassets */,
 				6A73BE282803494A0038ADED /* LaunchScreen.storyboard */,
 				6A73BE2B2803494A0038ADED /* Info.plist */,
-				72B1BB96280F55FB005AA2AB /* GCListCollectionViewController.swift */,
-				72B1BB98280F5926005AA2AB /* GCListCollectionViewCell.swift */,
 			);
 			path = "U-Travel";
 			sourceTree = "<group>";
@@ -143,11 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B1BB97280F55FB005AA2AB /* GCListCollectionViewController.swift in Sources */,
 				6A73BE22280349480038ADED /* ViewController.swift in Sources */,
+				4FE619E62814E9CF009FAB07 /* RecTVC.swift in Sources */,
 				6A73BE1E280349480038ADED /* AppDelegate.swift in Sources */,
+				4FE619E42814E8F1009FAB07 /* RecCell.swift in Sources */,
 				6A73BE20280349480038ADED /* SceneDelegate.swift in Sources */,
-				72B1BB99280F5926005AA2AB /* GCListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MKFJX26W5Z;
+				DEVELOPMENT_TEAM = HGRW8LJPL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "U-Travel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MKFJX26W5Z;
+				DEVELOPMENT_TEAM = HGRW8LJPL6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "U-Travel/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
