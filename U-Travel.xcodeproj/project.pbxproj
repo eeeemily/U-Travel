@@ -17,6 +17,10 @@
 		6A73BE2A2803494A0038ADED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A73BE282803494A0038ADED /* LaunchScreen.storyboard */; };
 		6A9133E3281639DA00C7C2E1 /* FriendsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133E2281639DA00C7C2E1 /* FriendsFeedViewController.swift */; };
 		6A9133E528163A4300C7C2E1 /* FriendsFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133E428163A4300C7C2E1 /* FriendsFeedTableViewCell.swift */; };
+		6A9133E828164C8A00C7C2E1 /* RecTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133E728164C8A00C7C2E1 /* RecTableViewCell.swift */; };
+		6A9133EC28164DAE00C7C2E1 /* RecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133EB28164DAE00C7C2E1 /* RecViewController.swift */; };
+		6A9133EF28165A6000C7C2E1 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133EE28165A6000C7C2E1 /* CosmosDistrib.swift */; };
+		6A9133F1281661A200C7C2E1 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9133F0281661A200C7C2E1 /* FoldingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		6A73BE2B2803494A0038ADED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A9133E2281639DA00C7C2E1 /* FriendsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsFeedViewController.swift; sourceTree = "<group>"; };
 		6A9133E428163A4300C7C2E1 /* FriendsFeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsFeedTableViewCell.swift; sourceTree = "<group>"; };
+		6A9133E728164C8A00C7C2E1 /* RecTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecTableViewCell.swift; sourceTree = "<group>"; };
+		6A9133EB28164DAE00C7C2E1 /* RecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecViewController.swift; sourceTree = "<group>"; };
+		6A9133EE28165A6000C7C2E1 /* CosmosDistrib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
+		6A9133F0281661A200C7C2E1 /* FoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,8 @@
 		6A73BE1C280349480038ADED /* U-Travel */ = {
 			isa = PBXGroup;
 			children = (
+				6A9133ED28165A3E00C7C2E1 /* Utils */,
+				6A9133E628164C6600C7C2E1 /* RecommendedList */,
 				6A9133E12816399700C7C2E1 /* FriendsFeed */,
 				4FE619E02814E59A009FAB07 /* RecommendationList */,
 				6A73BE1D280349480038ADED /* AppDelegate.swift */,
@@ -93,6 +103,24 @@
 				6A9133E428163A4300C7C2E1 /* FriendsFeedTableViewCell.swift */,
 			);
 			path = FriendsFeed;
+			sourceTree = "<group>";
+		};
+		6A9133E628164C6600C7C2E1 /* RecommendedList */ = {
+			isa = PBXGroup;
+			children = (
+				6A9133E728164C8A00C7C2E1 /* RecTableViewCell.swift */,
+				6A9133EB28164DAE00C7C2E1 /* RecViewController.swift */,
+			);
+			path = RecommendedList;
+			sourceTree = "<group>";
+		};
+		6A9133ED28165A3E00C7C2E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6A9133EE28165A6000C7C2E1 /* CosmosDistrib.swift */,
+				6A9133F0281661A200C7C2E1 /* FoldingCell.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +196,13 @@
 				6A9133E3281639DA00C7C2E1 /* FriendsFeedViewController.swift in Sources */,
 				6A73BE22280349480038ADED /* ViewController.swift in Sources */,
 				4FE619E62814E9CF009FAB07 /* RecTVC.swift in Sources */,
+				6A9133EF28165A6000C7C2E1 /* CosmosDistrib.swift in Sources */,
 				6A73BE1E280349480038ADED /* AppDelegate.swift in Sources */,
 				4FE619E42814E8F1009FAB07 /* RecCell.swift in Sources */,
+				6A9133EC28164DAE00C7C2E1 /* RecViewController.swift in Sources */,
 				6A73BE20280349480038ADED /* SceneDelegate.swift in Sources */,
+				6A9133E828164C8A00C7C2E1 /* RecTableViewCell.swift in Sources */,
+				6A9133F1281661A200C7C2E1 /* FoldingCell.swift in Sources */,
 				6A9133E528163A4300C7C2E1 /* FriendsFeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
