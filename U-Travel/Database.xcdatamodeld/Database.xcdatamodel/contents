@@ -15,16 +15,26 @@
         <relationship name="friendsuser" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="User"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES">
-        <attribute name="catergory" attributeType="String"/>
-        <attribute name="company" attributeType="String"/>
-        <attribute name="cost" attributeType="Decimal" defaultValueString="0.0"/>
-        <attribute name="info" attributeType="String"/>
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="airlines" optional="YES" attributeType="String"/>
+        <attribute name="arrivaltime" optional="YES" attributeType="String"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="cost" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="departuretime" optional="YES" attributeType="String"/>
+        <attribute name="enddate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
         <attribute name="itemid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="picture" attributeType="URI"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="URI"/>
+        <attribute name="picture2" optional="YES" attributeType="URI"/>
+        <attribute name="startdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="tag" optional="YES" attributeType="String"/>
         <attribute name="tag2" optional="YES" attributeType="String"/>
         <attribute name="tag3" optional="YES" attributeType="String"/>
         <attribute name="tag4" optional="YES" attributeType="String"/>
+        <attribute name="tag5" optional="YES" attributeType="String"/>
+        <attribute name="weather" optional="YES" attributeType="String"/>
         <relationship name="itembooked" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bookings"/>
         <relationship name="itemliked" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Likes"/>
     </entity>
@@ -67,7 +77,7 @@
     <elements>
         <element name="Bookings" positionX="-869.85546875" positionY="-357.09375" width="128" height="119"/>
         <element name="Friends" positionX="-1122.38671875" positionY="-163.08203125" width="128" height="89"/>
-        <element name="Item" positionX="-642.0703125" positionY="-93.734375" width="128" height="209"/>
+        <element name="Item" positionX="-642.0703125" positionY="-93.734375" width="128" height="14"/>
         <element name="Likes" positionX="-713.27734375" positionY="285.1796875" width="128" height="104"/>
         <element name="Preferences" positionX="-1063.36328125" positionY="208.5703125" width="128" height="224"/>
         <element name="User" positionX="-933.65625" positionY="-94.26953125" width="128" height="209"/>

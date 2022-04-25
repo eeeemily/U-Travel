@@ -2,7 +2,7 @@
 //  Friends+CoreDataProperties.swift
 //  U-Travel
 //
-//  Created by Clement Bentum on 4/20/22.
+//  Created by Clement Bentum on 4/25/22.
 //
 //
 
@@ -16,10 +16,9 @@ extension Friends {
         return NSFetchRequest<Friends>(entityName: "Friends")
     }
 
-    @NSManaged public var userid: Int64
     @NSManaged public var friendid: Int64
     @NSManaged public var friendship_anniv: Date?
-    @NSManaged public var attribute: NSObject?
+    @NSManaged public var userid: Int64
     @NSManaged public var friendsuser: User?
 
 }

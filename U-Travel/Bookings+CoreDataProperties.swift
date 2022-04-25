@@ -2,7 +2,7 @@
 //  Bookings+CoreDataProperties.swift
 //  U-Travel
 //
-//  Created by Clement Bentum on 4/20/22.
+//  Created by Clement Bentum on 4/25/22.
 //
 //
 
@@ -16,12 +16,12 @@ extension Bookings {
         return NSFetchRequest<Bookings>(entityName: "Bookings")
     }
 
-    @NSManaged public var userid: Int64
-    @NSManaged public var itemid: Int64
-    @NSManaged public var datebooked: Date?
     @NSManaged public var bookingid: Int64
-    @NSManaged public var bookingsuser: User?
+    @NSManaged public var datebooked: Date?
+    @NSManaged public var itemid: Int64
+    @NSManaged public var userid: Int64
     @NSManaged public var bookeditem: Item?
+    @NSManaged public var bookingsuser: User?
 
 }
 
