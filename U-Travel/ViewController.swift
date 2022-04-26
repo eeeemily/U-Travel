@@ -25,26 +25,6 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "survey_weather", sender: self)
     }
     
-    @IBAction func SurveyAcc(_ sender: Any) {
-        self.performSegue(withIdentifier: "survey_accom", sender: self)
-    }
-    
-    @IBAction func SurveyActivities(_ sender: Any) {
-        self.performSegue(withIdentifier: "survey_activities", sender: self)
-    }
-    
-    @IBAction func SurveyBudget(_ sender: Any) {
-        self.performSegue(withIdentifier: "survey_budget", sender: self)
-    }
-    
-    @IBAction func SurveyDates(_ sender: Any) {
-        self.performSegue(withIdentifier: "survey_dates", sender: self)
-    }
-    
-    @IBAction func SignUpToFeed(_ sender: Any) {
-        self.performSegue(withIdentifier: "sign_up_to_feed", sender: self)
-    }
-    
     @IBAction func LogIn(_ sender: Any) {
         self.performSegue(withIdentifier: "log_in", sender: self)
     }
